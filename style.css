@@ -1,2 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
 
-body { font-family: Arial; margin: 0; background-color: #0f172a; /* خلفية داكنة */ color: white; } /* Header */ header { background: #020617; padding: 20px; text-align: center; } nav a { color: #38bdf8; margin: 10px; text-decoration: none; font-weight: bold; } /* Hero */ .hero { background: linear-gradient(to right, #0ea5e9, #1e293b); text-align: center; padding: 100px 20px; } /* Services */ section { padding: 40px; text-align: center; } .cards { display: flex; gap: 
+/* Header */
+header {
+  background: #020617;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #38bdf8;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #0ea5e9, #1e293b);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Services */
+#services {
+  padding: 40px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  background: #1e293b;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service img {
+  width: 40%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.service div {
+  padding: 20px;
+}
+
+.service h3 {
+  color: #38bdf8;
+}
+
+/* Contact */
+#contact {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service {
+    flex-direction: column;
+  }
+
+  .service img {
+    width: 100%;
+  }
+}
